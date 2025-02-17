@@ -37,6 +37,7 @@ main {
 .page-header-nav-item-no-bullet {
   list-style: none;
   /* Удаление маркера для элемента */
+  margin-bottom: 5px;
 }
 
 .page-header-link {
@@ -68,6 +69,8 @@ main {
   /* Центрирование по вертикали */
   width: 140px;
   /* Ширина логотипа */
+  margin-right: 125px;
+  /* Выравнивание блока */
 }
 
 .page-header-logo-img {
@@ -80,6 +83,9 @@ main {
   /* Выравнивание контактов вправо */
   font-style: inherit;
   /* Унаследование стиля шрифта */
+  margin-bottom: 5px;
+  margin-right: 35px;
+  /* Выравнивание блока */
 }
 
 .contacts-item {
@@ -163,6 +169,10 @@ main {
   /* Высота строки для центрированной строки */
   text-align: center;
   /* Центрирование текста */
+  letter-spacing: 30px;
+  margin-left: 27px;
+  margin-top: 6px;
+  /* Выравнивание текста */
 }
 
 .hero-section-title-line-right {
@@ -170,10 +180,11 @@ main {
   /* Высота строки для правой строки */
   text-align: right;
   /* Выравнивание текста вправо */
+  margin-top: 15px;
 }
 
 .hero-section-title-spacing {
-  letter-spacing: 60px;
+  letter-spacing: 30px;
   /* Расстояние между буквами для пробелов */
 }
 
@@ -194,7 +205,7 @@ main {
   /* Вертикальное выравнивание */
   gap: 78px;
   /* Отступ между элементами описания */
-  padding: 136px 0 0;
+  padding: 117px 0 0;
   /* Отступы для описания */
 }
 
@@ -209,6 +220,7 @@ main {
   /* Преобразование текста в верхний регистр */
   word-spacing: 18px;
   /* Расстояние между словами */
+  padding-right: 30px;
 }
 
 .hero-section-cta-button {
@@ -243,7 +255,7 @@ main {
 
 /* Стили для секции лотов */
 .lots-section {
-  padding: 0 50px;
+  padding: 0 25px;
   /* Отступы для секции лотов */
 }
 
@@ -401,7 +413,7 @@ main {
   /* Три колонки */
   column-gap: 24px;
   /* Отступ между колонками */
-  padding: 0 50px;
+  padding: 0 25px 24px 25px;
   /* Отступы для секции */
 }
 
@@ -430,6 +442,7 @@ main {
   /* Закругление углов логотипа */
   background-color: #000000;
   /* Цвет фона логотипа */
+  transform: translateY(-26px);
 }
 
 .about-section-logo-img {
@@ -438,7 +451,7 @@ main {
 }
 
 .about-section-title {
-  padding: 100px 0 104px;
+  padding: 75px 0 104px;
   /* Отступы для заголовка секции о аукционе */
   font-weight: bold;
   /* Жирный шрифт для заголовка */
@@ -472,7 +485,7 @@ main {
   /* Флекс-контейнер для подвала */
   justify-content: space-between;
   /* Распределение пространства между элементами */
-  padding: 180px 50px 80px;
+  padding: 157px 50px 60px;
   /* Отступы для подвала */
 }
 
