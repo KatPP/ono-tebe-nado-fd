@@ -1,1 +1,519 @@
-/* место для вашего кода */
+/* Общие настройки блоков */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 183px;
+  /* Отступ между секциями */
+}
+
+.content-section {
+  width: 100%;
+  margin: 0 auto;
+  /* Центрирование секций */
+}
+
+/* Стили для заголовка страницы */
+.page-header {
+  display: grid;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
+  /* Настройка сетки для навигации */
+  align-items: center;
+  /* Вертикальное выравнивание */
+  padding: 92px 51px 89px;
+  /* Отступы вокруг заголовка */
+}
+
+.page-header-nav-list {
+  display: flex;
+  gap: 32px;
+  /* Отступ между элементами навигации */
+}
+
+.page-header-nav-item {
+  list-style: circle;
+  /* Стиль списка для навигации */
+}
+
+.page-header-nav-item-no-bullet {
+  list-style: none;
+  /* Удаление маркера для элемента */
+}
+
+.page-header-link {
+  font-size: 18px;
+  /* Размер шрифта для ссылок */
+  white-space: nowrap;
+  /* Запрет на перенос текста */
+}
+
+.text-link:hover {
+  background-color: #000000;
+  /* Цвет фона при наведении */
+  color: #fff;
+  /* Цвет текста при наведении */
+}
+
+.page-header-link-active {
+  text-decoration: none;
+  /* Удаление подчеркивания для активной ссылки */
+}
+
+/* Логотип страницы */
+.page-header-logo {
+  display: block;
+  /* Блочный элемент */
+  justify-self: center;
+  /* Центрирование логотипа */
+  align-self: center;
+  /* Центрирование по вертикали */
+  width: 140px;
+  /* Ширина логотипа */
+}
+
+.page-header-logo-img {
+  width: 100%;
+  /* Ширина изображения логотипа */
+}
+
+.page-header-contacts {
+  justify-self: end;
+  /* Выравнивание контактов вправо */
+  font-style: inherit;
+  /* Унаследование стиля шрифта */
+}
+
+.contacts-item {
+  display: block;
+  /* Блочный элемент */
+  font-size: 18px;
+  /* Размер шрифта для контактов */
+  line-height: 1.35;
+  /* Высота строки */
+}
+
+.contacts-address {
+  font-size: 18px;
+  /* Размер шрифта для адреса */
+  line-height: 1.35;
+  /* Высота строки */
+}
+
+/* Стили для главной секции */
+.hero-section {
+  position: relative;
+  /* Позиционирование для наложения */
+  padding: 165px 50px 50px 50px;
+  /* Отступы в секции */
+  background-image: url(../images/cover.jpg);
+  /* Фоновое изображение */
+  background-repeat: no-repeat;
+  /* Без повторения изображения */
+  background-size: cover;
+  /* Заполнение области фоном */
+}
+
+.hero-section-overlay {
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Подложка для наложения */
+  width: 100%;
+  /* Ширина наложения */
+  height: 100%;
+  /* Высота наложения */
+  opacity: 0.6;
+  /* Прозрачность наложения */
+  background-color: #000000;
+  /* Цвет наложения */
+}
+
+.hero-section-title {
+  position: relative;
+  /* Относительное позиционирование */
+  z-index: 1;
+  /* Поверх наложения */
+  display: flex;
+  flex-direction: column;
+  /* Вертикальное выравнивание заголовка */
+  gap: 20px;
+  /* Отступ между строками заголовка */
+  color: #fff;
+  /* Цвет текста заголовка */
+  font-weight: bold;
+  /* Жирный шрифт */
+  font-size: 100px;
+  /* Размер шрифта заголовка */
+  line-height: 1.15;
+  /* Высота строки */
+  letter-spacing: 30px;
+  /* Расстояние между буквами */
+  text-transform: uppercase;
+  /* Преобразование текста в верхний регистр */
+}
+
+.hero-section-title-line {
+  display: block;
+  /* Блочный элемент для строки заголовка */
+}
+
+.hero-section-title-line-center {
+  line-height: 1;
+  /* Высота строки для центрированной строки */
+  text-align: center;
+  /* Центрирование текста */
+}
+
+.hero-section-title-line-right {
+  line-height: 1;
+  /* Высота строки для правой строки */
+  text-align: right;
+  /* Выравнивание текста вправо */
+}
+
+.hero-section-title-spacing {
+  letter-spacing: 60px;
+  /* Расстояние между буквами для пробелов */
+}
+
+.hero-section-title-no-spacing {
+  letter-spacing: normal;
+  /* Нормальное расстояние между буквами */
+}
+
+.hero-section-description {
+  position: relative;
+  /* Относительное позиционирование */
+  z-index: 1;
+  /* Поверх наложения */
+  display: flex;
+  justify-content: flex-end;
+  /* Выравнивание по правому краю */
+  align-items: center;
+  /* Вертикальное выравнивание */
+  gap: 78px;
+  /* Отступ между элементами описания */
+  padding: 136px 0 0;
+  /* Отступы для описания */
+}
+
+.hero-section-description-text {
+  color: #fff;
+  /* Цвет текста описания */
+  font-size: 22px;
+  /* Размер шрифта для описания */
+  line-height: 1.27;
+  /* Высота строки для описания */
+  text-transform: uppercase;
+  /* Преобразование текста в верхний регистр */
+  word-spacing: 18px;
+  /* Расстояние между словами */
+}
+
+.hero-section-cta-button {
+  border: 1px #fff solid;
+  /* Граница кнопки */
+  padding: 14px 32px;
+  /* Отступы внутри кнопки */
+  color: #fff;
+  /* Цвет текста кнопки */
+  font-family: "Raleway", sans-serif;
+  /* Шрифт для кнопки */
+  font-weight: normal;
+  /* Нормальный вес шрифта */
+  font-size: 22px;
+  /* Размер шрифта для кнопки */
+  line-height: 1;
+  /* Высота строки для кнопки */
+  text-transform: uppercase;
+  /* Преобразование текста кнопки в верхний регистр */
+  background-color: transparent;
+  /* Прозрачный фон кнопки */
+  cursor: pointer;
+  /* Указатель при наведении на кнопку */
+}
+
+.hero-section-cta-button:hover {
+  color: #000000;
+  /* Цвет текста кнопки при наведении */
+  background-color: #fff;
+  /* Цвет фона кнопки при наведении */
+}
+
+/* Стили для секции лотов */
+.lots-section {
+  padding: 0 50px;
+  /* Отступы для секции лотов */
+}
+
+.lots-section-heading {
+  padding: 0 0 30px 40px;
+  /* Отступы для заголовка секции лотов */
+  font-weight: bold;
+  /* Жирный шрифт для заголовка */
+  font-size: 40px;
+  /* Размер шрифта для заголовка */
+  line-height: 1;
+  /* Высота строки для заголовка */
+  text-transform: uppercase;
+  /* Преобразование текста в верхний регистр */
+}
+
+.lots-section-list {
+  display: grid;
+  /* Сетка для списка лотов */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Три колонки */
+  column-gap: 25px;
+  /* Отступ между колонками */
+  list-style: none;
+  /* Удаление маркеров списка */
+}
+
+.lots-section-item {
+  height: 100%;
+  /* Высота элемента списка */
+}
+
+.lots-section-link {
+  display: block;
+  /* Блочный элемент для ссылки */
+  height: 100%;
+  /* Высота ссылки */
+}
+
+/* Стили для карточек лотов */
+.card {
+  position: relative;
+  /* Позиционирование для наложения */
+  display: flex;
+  flex-direction: column;
+  /* Вертикальное выравнивание карточки */
+  justify-content: space-between;
+  /* Распределение пространства */
+  gap: 30px;
+  /* Отступ между элементами карточки */
+  width: auto;
+  /* Автоматическая ширина */
+  height: 100%;
+  /* Высота карточки */
+  padding: 50px 40px;
+  /* Отступы внутри карточки */
+}
+
+.card-type-film {
+  background-image: url(../images/card-lot-01.jpg);
+  /* Фоновое изображение для карточки фильма */
+  background-repeat: no-repeat;
+  /* Без повторения изображения */
+  background-size: cover;
+  /* Заполнение области фоном */
+}
+
+.card-type-book {
+  background-image: url(../images/card-lot-02.jpg);
+  /* Фоновое изображение для карточки книги */
+  background-repeat: no-repeat;
+  /* Без повторения изображения */
+  background-size: cover;
+  /* Заполнение области фоном */
+}
+
+.card-type-picture {
+  background-image: url(../images/card-lot-03.jpg);
+  /* Фоновое изображение для карточки картины */
+  background-repeat: no-repeat;
+  /* Без повторения изображения */
+  background-size: cover;
+  /* Заполнение области фоном */
+}
+
+.card-overlay {
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Подложка для наложения */
+  width: 100%;
+  /* Ширина наложения */
+  height: 100%;
+  /* Высота наложения */
+  opacity: 0.6;
+  /* Прозрачность наложения */
+  background-color: #000000;
+  /* Цвет наложения */
+}
+
+.card-title {
+  position: relative;
+  /* Относительное позиционирование */
+  z-index: 1;
+  /* Поверх наложения */
+  color: #fff;
+  /* Цвет текста заголовка карточки */
+  font-weight: bold;
+  /* Жирный шрифт для заголовка карточки */
+  font-size: 22px;
+  /* Размер шрифта для заголовка карточки */
+  line-height: 1.2;
+  /* Высота строки для заголовка карточки */
+  text-decoration-line: underline;
+  /* Подчеркивание заголовка карточки */
+  text-transform: uppercase;
+  /* Преобразование текста заголовка в верхний регистр */
+}
+
+.card-description {
+  position: relative;
+  /* Относительное позиционирование */
+  z-index: 1;
+  /* Поверх наложения */
+  color: #fff;
+  /* Цвет текста описания карточки */
+  font-size: 20px;
+  /* Размер шрифта для описания карточки */
+  line-height: 1.2;
+  /* Высота строки для описания карточки */
+}
+
+.lots-section-more-link {
+  display: block;
+  /* Блочный элемент для ссылки "посмотреть больше" */
+  margin: 30px 0 0 40px;
+  /* Отступы для ссылки */
+  font-size: 20px;
+  /* Размер шрифта для ссылки */
+  text-decoration-line: underline;
+  /* Подчеркивание ссылки */
+  text-underline-position: under;
+  /* Положение подчеркивания */
+  width: fit-content;
+  /* Ширина по содержимому */
+}
+
+/* Стили для секции о аукционе */
+.about-section {
+  display: grid;
+  /* Сетка для секции о аукционе */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Три колонки */
+  column-gap: 24px;
+  /* Отступ между колонками */
+  padding: 0 50px;
+  /* Отступы для секции */
+}
+
+.about-section-column {
+  justify-self: center;
+  /* Центрирование колонки */
+}
+
+.about-section-column-text {
+  grid-column: 2/4;
+  /* Занимает две колонки */
+}
+
+.about-section-logo {
+  display: flex;
+  /* Флекс-контейнер для логотипа */
+  justify-content: center;
+  /* Центрирование логотипа */
+  align-items: center;
+  /* Вертикальное выравнивание логотипа */
+  width: 240px;
+  /* Ширина логотипа */
+  height: 240px;
+  /* Высота логотипа */
+  border-radius: 50%;
+  /* Закругление углов логотипа */
+  background-color: #000000;
+  /* Цвет фона логотипа */
+}
+
+.about-section-logo-img {
+  width: 148px;
+  /* Ширина изображения логотипа */
+}
+
+.about-section-title {
+  padding: 100px 0 104px;
+  /* Отступы для заголовка секции о аукционе */
+  font-weight: bold;
+  /* Жирный шрифт для заголовка */
+  font-size: 40px;
+  /* Размер шрифта для заголовка */
+  line-height: 1;
+  /* Высота строки для заголовка */
+  text-transform: uppercase;
+  /* Преобразование текста заголовка в верхний регистр */
+}
+
+.about-section-text {
+  display: flex;
+  /* Флекс-контейнер для текста о аукционе */
+  flex-direction: column;
+  /* Вертикальное выравнивание текста */
+  gap: 25px;
+  /* Отступ между параграфами */
+}
+
+.about-section-text p {
+  font-size: 20px;
+  /* Размер шрифта для параграфов текста */
+  line-height: normal;
+  /* Нормальная высота строки для текста */
+}
+
+/* Стили для подвала страницы */
+.page-footer {
+  display: flex;
+  /* Флекс-контейнер для подвала */
+  justify-content: space-between;
+  /* Распределение пространства между элементами */
+  padding: 180px 50px 80px;
+  /* Отступы для подвала */
+}
+
+.page-footer-contacts {
+  font-style: inherit;
+  /* Унаследование стиля шрифта */
+}
+
+.page-footer-nav-list {
+  text-align: center;
+  /* Центрирование списка навигации */
+  list-style: none;
+  /* Удаление маркеров списка */
+}
+
+.page-footer-link {
+  font-size: 18px;
+  /* Размер шрифта для ссылок в подвале */
+  line-height: normal;
+  /* Нормальная высота строки для ссылок */
+  text-underline-position: under;
+  /* Положение подчеркивания для ссылок */
+}
+
+.page-footer-link-active {
+  text-decoration: none;
+  /* Удаление подчеркивания для активной ссылки */
+}
+
+.page-footer-social-list {
+  display: flex;
+  /* Флекс-контейнер для списка социальных ссылок */
+  gap: 48px;
+  /* Отступ между элементами списка */
+  list-style: none;
+  /* Удаление маркеров списка */
+}
+
+.page-footer-social-icon {
+  width: auto;
+  /* Автоматическая ширина для иконок */
+  height: 48px;
+  /* Высота иконок */
+}
