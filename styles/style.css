@@ -40,11 +40,10 @@ main {
   margin-bottom: 5px;
 }
 
+/* Размер шрифта для ссылок */
 .page-header-link {
   font-size: 18px;
-  /* Размер шрифта для ссылок */
-  white-space: nowrap;
-  /* Запрет на перенос текста */
+  
 }
 
 .text-link:hover {
@@ -78,7 +77,8 @@ main {
   /* Ширина изображения логотипа */
 }
 
-.page-header-contacts {
+.contacts {
+  /* Обновлено имя класса для универсальности */
   justify-self: end;
   /* Выравнивание контактов вправо */
   font-style: inherit;
@@ -89,6 +89,7 @@ main {
 }
 
 .contacts-item {
+  /* Обновлено имя класса для универсальности */
   display: block;
   /* Блочный элемент */
   font-size: 18px;
@@ -98,6 +99,7 @@ main {
 }
 
 .contacts-address {
+  /* Обновлено имя класса для универсальности */
   font-size: 18px;
   /* Размер шрифта для адреса */
   line-height: 1.35;
@@ -116,9 +118,12 @@ main {
   /* Без повторения изображения */
   background-size: cover;
   /* Заполнение области фоном */
+  background-position: center;
+  /* Центрирование фонового изображения */
 }
 
-.hero-section-overlay {
+.overlay {
+  /* Изменено имя класса для наложения */
   position: absolute;
   /* Абсолютное позиционирование */
   top: 0;
@@ -224,7 +229,7 @@ main {
 }
 
 .hero-section-cta-button {
-  border: 1px #fff solid;
+  border: 1px solid currentColor;
   /* Граница кнопки */
   padding: 14px 32px;
   /* Отступы внутри кнопки */
@@ -279,6 +284,8 @@ main {
   /* Три колонки */
   column-gap: 25px;
   /* Отступ между колонками */
+  row-gap: 25px;
+  /* Отступ между строками */
   list-style: none;
   /* Удаление маркеров списка */
 }
@@ -293,6 +300,8 @@ main {
   /* Блочный элемент для ссылки */
   height: 100%;
   /* Высота ссылки */
+  text-decoration: none;
+  /* Сброс нижнего подчеркивания */
 }
 
 /* Стили для карточек лотов */
@@ -312,36 +321,36 @@ main {
   /* Высота карточки */
   padding: 50px 40px;
   /* Отступы внутри карточки */
+  background-position: center;
+  /* Центрирование фонового изображения */
+}
+
+.card-type {
+  background-repeat: no-repeat;
+  /* Без повторения изображения */
+  background-size: cover;
+  /* Заполнение области фоном */
 }
 
 .card-type-film {
   background-image: url(../images/card-lot-01.jpg);
   /* Фоновое изображение для карточки фильма */
-  background-repeat: no-repeat;
-  /* Без повторения изображения */
-  background-size: cover;
-  /* Заполнение области фоном */
 }
 
 .card-type-book {
   background-image: url(../images/card-lot-02.jpg);
   /* Фоновое изображение для карточки книги */
-  background-repeat: no-repeat;
-  /* Без повторения изображения */
-  background-size: cover;
-  /* Заполнение области фоном */
+
 }
 
 .card-type-picture {
   background-image: url(../images/card-lot-03.jpg);
   /* Фоновое изображение для карточки картины */
-  background-repeat: no-repeat;
-  /* Без повторения изображения */
-  background-size: cover;
-  /* Заполнение области фоном */
+
 }
 
 .card-overlay {
+  /* Изменено имя класса на более универсальное */
   position: absolute;
   /* Абсолютное позиционирование */
   top: 0;
@@ -442,7 +451,8 @@ main {
   /* Закругление углов логотипа */
   background-color: #000000;
   /* Цвет фона логотипа */
-  transform: translateY(-26px);
+  margin-top: -26px;
+  /* Смещение логотипа вверх */
 }
 
 .about-section-logo-img {
@@ -489,7 +499,8 @@ main {
   /* Отступы для подвала */
 }
 
-.page-footer-contacts {
+.page-footer {
+  /* Обновлено имя класса для универсальности */
   font-style: inherit;
   /* Унаследование стиля шрифта */
 }
