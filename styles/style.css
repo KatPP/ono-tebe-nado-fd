@@ -2,7 +2,7 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 183px;
+  gap: 155px;
   /* Отступ между секциями */
 }
 
@@ -24,6 +24,7 @@ main {
 }
 
 .page-header-nav-list {
+  width: 391px;
   display: flex;
   gap: 32px;
   /* Отступ между элементами навигации */
@@ -37,7 +38,7 @@ main {
 .page-header-nav-item-no-bullet {
   list-style: none;
   /* Удаление маркера для элемента */
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /* Размер шрифта для ссылок */
@@ -68,8 +69,7 @@ main {
   /* Центрирование по вертикали */
   width: 140px;
   /* Ширина логотипа */
-  margin-right: 125px;
-  /* Выравнивание блока */
+  margin-right: 127px;
 }
 
 .page-header-logo-img {
@@ -265,7 +265,7 @@ main {
 }
 
 .lots-section-heading {
-  padding: 0 0 30px 40px;
+  padding: 25px 12px 30px 40px;
   /* Отступы для заголовка секции лотов */
   font-weight: bold;
   /* Жирный шрифт для заголовка */
@@ -422,7 +422,7 @@ main {
   /* Три колонки */
   column-gap: 24px;
   /* Отступ между колонками */
-  padding: 0 25px 24px 25px;
+  padding: 0px 30px 24px 25px;
   /* Отступы для секции */
 }
 
@@ -451,8 +451,7 @@ main {
   /* Закругление углов логотипа */
   background-color: #000000;
   /* Цвет фона логотипа */
-  margin-top: -26px;
-  /* Смещение логотипа вверх */
+
 }
 
 .about-section-logo-img {
@@ -461,7 +460,7 @@ main {
 }
 
 .about-section-title {
-  padding: 75px 0 104px;
+  padding: 105px 0 105px;
   /* Отступы для заголовка секции о аукционе */
   font-weight: bold;
   /* Жирный шрифт для заголовка */
@@ -507,6 +506,7 @@ main {
   /* Центрирование списка навигации */
   list-style: none;
   /* Удаление маркеров списка */
+  margin-right: 30px;
 }
 
 .page-footer-link {
